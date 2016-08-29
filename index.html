@@ -1,11 +1,23 @@
-<h4>This is Buddy.</h4>
-
-<script>
-if (window.opener) {
-opener.location += "#hacked";
-} else {
-document.querySelector('h2').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
-}
-</script>
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>No-Opener Demo</title>
+  
+    
+  </head>
+  <body>
+      
+<title>Go back!</title>
+<h1>This is Buddy</h1>
 <img src="http://www.abdn.ac.uk/darren/IMG_3355.JPG" />
+<script>
+	if (window.opener) {
+		opener.location = "demo.html#hacked";
+	} else {
+		document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+	}
+</script>
+  </body>
+
+</html>
